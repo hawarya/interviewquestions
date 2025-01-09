@@ -1,0 +1,58 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        div{
+        width:200px;
+        height:150px;
+        padding:10px;
+        margin:10px;
+        margin-left: 300px;
+        margin-top:200px;
+        border:10px solid rgb(53, 60, 71);
+        background-color: rgb(110, 223, 233);
+        float: center;
+        display:inline-table;
+
+        }
+        button{
+            color:#a52a2a;
+            width:70px;
+            height:30px;
+            border-width: 5px;
+            background-color: antiquewhite;
+        }
+        label{
+            color:rgb(202, 37, 37)
+        }
+input{
+    border-width: 5px;
+}
+h1{
+   color: #a52a2a;
+
+}
+        </style>
+</head>
+<body>
+    <h1></h1>
+    <form><div>
+        <h1>Login Page</h1>
+        <label for="fname">User name:</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+  <label for="password" >Password :</label><br>
+  <input type="password" id="password"name="password"><br>
+  <br><button type="button" id="login"> Login </button>
+
+</div>
+<script>
+  
+    document.getElementById('login').addEventListener('click', function() {
+        window.location.href = "dash.html"; 
+    });
+</script>
+</body>
+</html>
