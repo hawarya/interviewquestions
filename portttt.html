@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+
+P{
+    font-size: 40PX;
+    letter-spacing: 4px;
+}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            font-size: 20px;
+           
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1f1f1f;
+            padding: 15px;
+            font-size: 50;
+            
+
+        }
+
+        nav a {
+            color: #0d6efd;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+            font-size: 22px; 
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            height: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #070707;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            font-size: 30;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+            transition: filter 0.3s;
+        }
+
+        .social-icons img:hover {
+            filter: invert(45%) sepia(100%) saturate(418%) hue-rotate(192deg) brightness(97%) contrast(95%);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background-color: #1f1f1f;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill-item img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .skill-item p {
+            margin-top: 10px;
+            font-size: 20px; 
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width:500px;
+        height:250px;
+       
+        margin:10px;
+        margin-left: 300px;
+        margin-top:200px;
+        margin-top: 100PX;
+        
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #0d6efd;
+            border-radius: 5px;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: none;
+            border-color: #ffffff;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #0d6efd;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            font-size: 18px; 
+            gap: 10PX;
+        }
+
+        .contact-form button:hover {
+            background-color: #ffffff;
+            color: #0d6efd;
+        }
+
+        .contact-social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-social-icons a {
+            display: inline-block;
+        }
+
+        .contact-social-icons img {
+            width: 30px;
+            height: 30px;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+            transition: filter 0.3s;
+        }
+
+        .contact-social-icons img:hover {
+            filter: invert(45%) sepia(100%) saturate(418%) hue-rotate(192deg) brightness(97%) contrast(95%);
+        }
+        
+ .text{
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 20%;
+  
+    flex: 1; 
+    font-size: 30px; 
+ }
+ .image {
+    flex: 1;
+    text-align: right; 
+}
+
+.image img {
+    max-width: 90%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+.home {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div id="home" class="container">
+        <div class ="text">
+        <h1 >HI!!!</h1>
+        <p>I'M AISHWARYA V</p>
+        <P>- SOFTWARE ENGINEER</P></div>
+        <div class="social-icons">
+            <div class="image">
+                <img src="your-image.jpg" alt="Your Image">
+            </div>
+           <DIV><BR>
+            <a href="https://linkedin.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+            <a href="https://github.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"></a>
+       </DIV> </div>
+    </div>
+
+    <div id="about" class="container">
+        <h1>About Me</h1>
+        <p >Hi, I'm AISHWARYA, a passionate Computer Science student with a love for coding and problem-solving. I specialize iN cloud computing  and enjoy exploring new technologies. My goal is to create innovative solutions and impactful projects. 
+            Let's connect and build something amazing together!</p>
+    </div>
+
+    <div id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="https://i.pinimg.com/736x/e5/9a/52/e59a522e5010613ae986ede14b8916a3.jpg" alt="Skill 1">
+                <p>JAVA</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://i.pinimg.com/736x/0f/04/fc/0f04fcdc4bdfc4a8f1d44ccb42b7b263.jpg" alt="Skill 2">
+                <p>PYTHON</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://i.pinimg.com/736x/2b/f1/42/2bf1422598e3129ec9052c560640d366.jpg" alt="Skill 3">
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <img src="data:image/png;base64,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" alt="Skill 4">
+                <p>C++</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/002/276/837/non_2x/c-language-icon-in-outline-style-vector.jpg" alt="Skill 5">
+                <p>C</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="container">
+        <h1>Projects</h1>
+        <H2>SCHOLAHUB   - 2024 </H2>
+           <H2> CARRIER GUIDANCE APP -Designed and developed responsive web pages using React, HTML, CSS, and JavaScript. Built a student portal for accessing educational resources, integrating multimedia content and interactive tools.
+Ensured cross-browser compatibility and optimized the user interface for seamless user experience.</H2>
+<H2>Unit Convertor    - 2023     </H2>                                                                                                                                               
+<H2>This project emerges as a comprehensive solution to simplify and standardize unit conversions across various metrics.
+This versatile converter addresses the fundamental units of length, mass, time, temperature, currency, and Body Mass 
+Index (BMI), offering users an intuitive and efficient platform to seamlessly switch between different measurement standards</H2>
+
+    </div>
+
+    <div id="contact" class="container">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number">
+            <textarea name="comments" rows="4" placeholder="Your Comments"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-social-icons">
+            <a href="https://whatsapp.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
+           
+            <a href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        </div>
+    </div>
+</body>
+</html>
