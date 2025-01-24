@@ -17,7 +17,7 @@ import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo"
 import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback"
 import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMethods"
 import Student from "./components/FunctionalComponents/Hooks/Student"
-import Memo from "./components/FunctionalComponents/Memoization/memo"
+import Memo from "./components/FunctionalComponents/Memoization/Memo"
 
 
 
