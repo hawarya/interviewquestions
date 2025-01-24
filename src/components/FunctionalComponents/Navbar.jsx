@@ -3,9 +3,9 @@ import '../../css/Navbar.css'
 import { useState } from 'react'
 const Navbar = (onLogout) => {
     var [dropdown, showDropdown] = useState(false)
-    //const toggleDropdown=()=>{
-    // showDropdown(dropdown=> !dropdown)
-    //}
+    const toggleDropdown=()=>{
+ showDropdown(dropdown=> !dropdown)
+    }
     return (<header>
         <nav>
             <ol>
@@ -18,19 +18,22 @@ const Navbar = (onLogout) => {
                     <span onMouseEnter={() => { showDropdown(true) }} onMouseLeav={() => { showDropdown(false) }}>Hooks</span>
                     {dropdown &&
                         (
-                            <ul>
+                            <ul >
+                                  { <li><Link to='/react-lm'>React-LifeCycle</Link></li> }
                                 { <li><Link to='/useState'>useState</Link></li> }
                                 {<li><Link to='/useEffect'>useEffect</Link></li>}
                                 {<li><Link to='/useEffectAPI' >useEffectAPI</Link></li>}
                                 {<li><Link to='/use-ref' >useRef</Link></li>}
                                 {<li><Link to='/use-memo' >useMemo</Link></li>}
                                 {<li><Link to='/use-callback' >usecallback</Link></li>}
+                                {<li><Link to='/student' >usecontext</Link></li>}
                             </ul>
                         )
                     }
                 </div>
                 
                 <li><Link to='/UseEffectImageAPI' class="link">UseEffectImageAPI</Link></li>
+                <li><Link to='/memo' className="link" >Memo</Link></li>
                 <li><Link to='/' className="link" onClick={onLogout}>Logout</Link></li>
             </ol>
         </nav>

@@ -15,6 +15,11 @@ import "./App.css";
 import { useState } from "react";
 import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo"
 import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback"
+import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMethods"
+import Student from "./components/FunctionalComponents/Hooks/Student"
+import Memo from "./components/FunctionalComponents/Memoization/memo"
+
+
 
 
 function App() {
@@ -47,6 +52,7 @@ function App() {
             <Route path='/About' element={<About />}></Route>
             <Route path="/Gallery" element={<Gallery image="SECE logo" page="Gallery" />}></Route>
             <Route path="/Contact" element={<Contact />}></Route>
+            <Route path="/react-lm" element={<ReactLifecycleMethods/>}></Route>
             <Route path="/UseState" element={<UseState />}></Route>
             <Route path="/UseEffect" element={<UseEffect />}></Route>
             <Route path="/UseEffectAPI" element={<UseEffectAPi/>}></Route>
@@ -54,6 +60,8 @@ function App() {
             <Route path="/use-ref" element={<UseRef/>}></Route>
             <Route path="/use-memo" element={<UseMemo/>}></Route>
             <Route path="/use-callback" element={<UseCallback/>}></Route>
+          <Route path="/student" element={<Student/>}></Route>
+          <Route path="/memo" element={<Memo/>}></Route>
         
           </Routes>
         </>
