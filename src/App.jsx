@@ -3,8 +3,7 @@ import About from "./components/FunctionalComponents/About"
 import Gallery from "./components/FunctionalComponents/Gallery"
 import Contact from "./components/FunctionalComponents/Contact"
 import Navbar from "./components/FunctionalComponents/Navbar"
-import Signup from "./components/FunctionalComponents/Signup"
-import Login from "./components/FunctionalComponents/Login"
+
 import UseState from "./components/FunctionalComponents/Hooks/UseState"
 import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect"
 import UseEffectAPi from "./components/FunctionalComponents/Hooks/UseEffectAPI"
@@ -17,34 +16,20 @@ import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo"
 import UseCallback from "./components/FunctionalComponents/Hooks/UseCallback"
 import ReactLifecycleMethods from "./components/classComponents/ReactLifecycleMethods"
 import Student from "./components/FunctionalComponents/Hooks/Student"
-import Memo from "./components/FunctionalComponents/Memoization/Memo"
+import Memo from "./components/FunctionalComponents/Memoization/memo"
+import LazyLoadingWithSuspense from "./components/FunctionalComponents/Memoization/LazyLoadingWithSuspense"
+import UseLocalStorage from "./components/FunctionalComponents/Hooks/CustomHooks/UseLocalStorage"
+import HoC from "./components/FunctionalComponents/HOc/HoC"
 
 
 
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  const handleLogin = () => {
-    setIsAuthenticated(true);
-
-  };
-
-  const handleLogout = () => {
-    setIsAuthenticated(false);
-
-  };
+ 
 
   return (<div>
     <BrowserRouter>
-      {!isAuthenticated ? (
-        <>
-          <Routes>
-            <Route path="/" element={<Signup onLogin={handleLogin} />} />
-            <Route path="/Login" element={<Login onLogin={handleLogin} />} />
-          </Routes>
-        </>
-      ) : (
+  
         <>
           <Navbar />
           <Routes>
@@ -62,10 +47,13 @@ function App() {
             <Route path="/use-callback" element={<UseCallback/>}></Route>
           <Route path="/student" element={<Student/>}></Route>
           <Route path="/memo" element={<Memo/>}></Route>
+          <Route path="/lazy" element={<LazyLoadingWithSuspense/>}></Route>
+          <Route path="/use-cust" element={<UseLocalStorage/>}></Route>
+          <Route path="/hoc" element={<HoC/>}  ></Route>  
         
           </Routes>
         </>
-      )}
+      
 
     </BrowserRouter>
   </div >

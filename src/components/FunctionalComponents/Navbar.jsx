@@ -27,6 +27,8 @@ const Navbar = (onLogout) => {
                                 {<li><Link to='/use-memo' >useMemo</Link></li>}
                                 {<li><Link to='/use-callback' >usecallback</Link></li>}
                                 {<li><Link to='/student' >usecontext</Link></li>}
+                                {<li><Link to='/use-cust' >UseLocalStorage</Link></li>}
+
                             </ul>
                         )
                     }
@@ -36,8 +38,9 @@ const Navbar = (onLogout) => {
                     <span >Memoization</span>
                     {dropdown &&
                         ( <ul>
-                            <li><Link to='/Memo' class="link">React.Memo</Link></li>
-                          
+                            <li><Link to='/memo' class="link">React.Memo</Link></li>
+                            <li><Link to='/lazy' class="link">LazyLoadingWithSuspense</Link></li>
+                            <li><Link to='/hoc' class="link">HOC</Link></li>
                           </ul>  )}
                 </div> 
 
